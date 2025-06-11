@@ -1136,6 +1136,14 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .author-bio-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
 /* Disable pointer events and set cursor to default for .menu-item on touch devices and small screens */
 @media (pointer: coarse), (max-width: 768px) {
   .menu-item,
