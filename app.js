@@ -2,8 +2,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all interactive features
     initScrollAnimations();
-    initHoverEffects();
-    initAccessibilityFeatures();
+    if (!isMobile()) {
+        initHoverEffects();
+        initAccessibilityFeatures();
+        initTouchInteractions();
+    }
 });
 
 // Smooth scroll-in animations using Intersection Observer
@@ -203,8 +206,10 @@ function initTouchInteractions() {
     }
 }
 
-// Initialize touch interactions
-initTouchInteractions();
+// Check if the device is mobile
+function isMobile() {
+    return window.matchMedia('(pointer: coarse), (max-width: 768px)').matches;
+}
 
 // Error handling for graceful degradation
 window.addEventListener('error', function(e) {
