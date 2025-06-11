@@ -866,17 +866,21 @@ body {
   justify-content: center;
   padding: 1rem 0;
   border-bottom: 1px solid rgba(232, 224, 214, 0.5);
-  transition: box-shadow 0.25s var(--ease-standard), transform 0.25s var(--ease-standard), background 0.3s, padding 0.3s, border-radius 0.3s;
+  transition:
+    box-shadow 0.25s var(--ease-standard),
+    transform 0.25s var(--ease-standard),
+    background 0.3s ease,
+    padding 0.3s ease;
   position: relative;
 }
 
 .menu-item:hover {
-  box-shadow: 0 6px 24px var(--menu-shadow-hover);
-  transform: translateY(-4px) scale(1.025);
-  background: rgba(156, 174, 156, 0.03);
-  border-radius: 8px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  transform: translateY(-2px) scale(1.015);
+  box-shadow: 0 8px 32px var(--menu-shadow-hover);
+  background: rgba(156, 174, 156, 0.05);
+  border-radius: 12px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .item-header {
