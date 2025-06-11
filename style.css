@@ -934,9 +934,7 @@ body {
 /* Footer */
 .menu-footer {
   text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid var(--menu-border);
-  margin-top: 2rem;
+  padding: 1.5rem 0;
 }
 
 .footer-decoration {
