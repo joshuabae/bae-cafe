@@ -1139,9 +1139,8 @@ body {
 /* Disable pointer events and set cursor to default for .menu-item on touch devices and small screens */
 @media (pointer: coarse), (max-width: 768px) {
   .menu-item,
-  .menu-item a,
-  .menu-item button {
-    pointer-events: none;
-    cursor: default;
+  .menu-item * {
+    pointer-events: none !important;
+    cursor: default !important;
   }
 }
