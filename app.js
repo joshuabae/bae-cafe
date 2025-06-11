@@ -1,11 +1,14 @@
 // Enhanced aesthetic interactions for the cafe menu
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all interactive features
-    // initScrollAnimations();
-    initHoverEffects();
+    if (!isMobile()) {
+        initHoverEffects();
+        initSectionHighlighting();
+        initParallaxHeader();
+        initLoadingState(); // Load fade-in only on desktop
+    }
     initAccessibilityFeatures();
-    initTouchInteractions();
 });
+
 
 // // Smooth scroll-in animations using Intersection Observer
 // function initScrollAnimations() {
@@ -182,8 +185,10 @@ function initLoadingState() {
     });
 }
 
-// Initialize loading state
-initLoadingState();
+// Replace the existing initLoadingState() call with:
+if (!isMobile()) {
+    initLoadingState();
+}
 
 // Add touch-friendly interactions for mobile
 function initTouchInteractions() {

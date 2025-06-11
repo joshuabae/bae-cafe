@@ -1170,4 +1170,6 @@ body {
 .menu-item * {
   pointer-events: none !important;
   cursor: default !important;
+  transition: default !important;
+  animation: default !important;
 }
