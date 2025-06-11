@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize all interactive features
     initScrollAnimations();
     initHoverEffects();
-    initPriceFormatting();
     initAccessibilityFeatures();
 });
 
@@ -54,45 +53,14 @@ function initHoverEffects() {
             item.addEventListener('mouseenter', function() {
                 // Add subtle glow effect to section
                 section.style.boxShadow = '0 12px 48px rgba(61, 41, 20, 0.15)';
-                
-                // Highlight the price with a subtle pulse
-                const price = this.querySelector('.item-price');
-                price.style.transform = 'scale(1.05)';
-                price.style.transition = 'transform 0.3s ease';
             });
             
             item.addEventListener('mouseleave', function() {
                 // Reset section shadow
                 section.style.boxShadow = '0 8px 32px rgba(61, 41, 20, 0.08)';
-                
-                // Reset price scale
-                const price = this.querySelector('.item-price');
-                price.style.transform = 'scale(1)';
             });
         });
     });
-}
-
-// Format prices with elegant styling
-function initPriceFormatting() {
-    const prices = document.querySelectorAll('.item-price');
-    
-    prices.forEach(price => {
-        const priceText = price.textContent;
-        const formattedPrice = formatPrice(priceText);
-        price.innerHTML = formattedPrice;
-    });
-}
-
-function formatPrice(priceText) {
-    // Extract price value and add elegant formatting
-    const match = priceText.match(/\$(\d+)\.(\d+)/);
-    if (match) {
-        const dollars = match[1];
-        const cents = match[2];
-        return `<span class="price-symbol">$</span><span class="price-dollars">${dollars}</span><span class="price-cents">.${cents}</span>`;
-    }
-    return priceText;
 }
 
 // Add accessibility features
@@ -130,20 +98,6 @@ function initAccessibilityFeatures() {
             outline-offset: 2px;
             border-radius: 8px;
             background: rgba(156, 174, 156, 0.05);
-        }
-        
-        .price-symbol {
-            font-size: 0.9em;
-            opacity: 0.8;
-        }
-        
-        .price-dollars {
-            font-weight: 600;
-        }
-        
-        .price-cents {
-            font-size: 0.9em;
-            opacity: 0.9;
         }
     `;
     document.head.appendChild(style);
@@ -263,7 +217,6 @@ window.addEventListener('error', function(e) {
 window.CafeMenu = {
     initScrollAnimations,
     initHoverEffects,
-    initPriceFormatting,
     initAccessibilityFeatures
 };
 
