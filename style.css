@@ -1081,6 +1081,12 @@ body {
   box-shadow: 0 2px 12px var(--menu-shadow);
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   margin-bottom: 1rem;
+  transition: box-shadow 0.25s var(--ease-standard), transform 0.25s var(--ease-standard);
+}
+
+.author-bio:hover {
+  box-shadow: 0 6px 24px var(--menu-shadow-hover);
+  transform: translateY(-4px) scale(1.025);
 }
 
 .author-photo {
@@ -1094,6 +1100,12 @@ body {
   box-shadow: 0 2px 8px var(--menu-shadow);
   background: #eee;
   display: block;
+  transition: box-shadow 0.25s var(--ease-standard), filter 0.25s var(--ease-standard);
+}
+
+.author-photo:hover {
+  box-shadow: 0 4px 24px var(--menu-shadow-hover);
+  filter: brightness(1.07) saturate(1.1);
 }
 
 .author-name {
