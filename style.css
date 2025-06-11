@@ -872,6 +872,7 @@ body {
     background 0.3s ease,
     padding 0.3s ease;
   position: relative;
+  font-size: 1.65rem;
 }
 
 .menu-item:hover {
@@ -894,7 +895,7 @@ body {
 
 .item-name {
   font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
+  font-size: 1.65rem;
   font-weight: 500;
   color: var(--menu-text-primary);
   flex: 1 1 100%;
@@ -910,7 +911,7 @@ body {
     width: 100%;
   }
   .item-name {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
