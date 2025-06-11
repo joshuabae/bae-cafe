@@ -900,31 +900,6 @@ body {
   text-align: center;
 }
 
-.item-price {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--menu-price);
-  white-space: nowrap;
-  position: relative;
-}
-
-.item-price::before {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--menu-price), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.menu-item:hover .item-price::before {
-  opacity: 1;
-}
-
 .item-description {
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
@@ -999,11 +974,6 @@ body {
   .item-name {
     font-size: 1rem;
     text-align: center;
-  }
-  
-  .item-price {
-    font-size: 0.95rem;
-    align-self: flex-end;
   }
   
   .menu-item:hover {
