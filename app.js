@@ -1,7 +1,7 @@
 // Enhanced aesthetic interactions for the cafe menu
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all interactive features
-    initScrollAnimations();
+    // initScrollAnimations();
     if (!isMobile()) {
         initHoverEffects();
         initAccessibilityFeatures();
@@ -9,41 +9,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Smooth scroll-in animations using Intersection Observer
-function initScrollAnimations() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+// // Smooth scroll-in animations using Intersection Observer
+// function initScrollAnimations() {
+//     const observerOptions = {
+//         threshold: 0.1,
+//         rootMargin: '0px 0px -50px 0px'
+//     };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
+//     const observer = new IntersectionObserver((entries) => {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 entry.target.classList.add('animate-in');
+//                 observer.unobserve(entry.target);
+//             }
+//         });
+//     }, observerOptions);
 
-    // Observe menu items for staggered animation
-    const menuItems = document.querySelectorAll('.menu-item');
-    menuItems.forEach((item, index) => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(20px)';
-        item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-        observer.observe(item);
-    });
+//     // Observe menu items for staggered animation
+//     const menuItems = document.querySelectorAll('.menu-item');
+//     menuItems.forEach((item, index) => {
+//         item.style.opacity = '0';
+//         item.style.transform = 'translateY(20px)';
+//         item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+//         observer.observe(item);
+//     });
 
-    // Add CSS for animate-in class
-    const style = document.createElement('style');
-    style.textContent = `
-        .animate-in {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-    `;
-    document.head.appendChild(style);
-}
+//     // Add CSS for animate-in class
+//     const style = document.createElement('style');
+//     style.textContent = `
+//         .animate-in {
+//             opacity: 1 !important;
+//             transform: translateY(0) !important;
+//         }
+//     `;
+//     document.head.appendChild(style);
+// }
 
 // Enhanced hover effects for menu items
 function initHoverEffects() {
