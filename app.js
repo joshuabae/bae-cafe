@@ -266,3 +266,5 @@ window.CafeMenu = {
     initPriceFormatting,
     initAccessibilityFeatures
 };
+
+// No changes needed for description column, as the script does not reference or render any description fields.
