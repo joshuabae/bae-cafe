@@ -1084,13 +1084,16 @@ body {
 }
 
 .author-photo {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 160px;
+  border-radius: 16px;
+  object-fit: unset;
   margin-bottom: 1.25rem;
   box-shadow: 0 2px 8px var(--menu-shadow);
   background: #eee;
+  display: block;
 }
 
 .author-name {
