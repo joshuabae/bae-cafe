@@ -2,11 +2,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all interactive features
     // initScrollAnimations();
-    if (!isMobile()) {
-        initHoverEffects();
-        initAccessibilityFeatures();
-        initTouchInteractions();
-    }
+    initHoverEffects();
+    initAccessibilityFeatures();
+    initTouchInteractions();
 });
 
 // // Smooth scroll-in animations using Intersection Observer
