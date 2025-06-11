@@ -1,0 +1,27 @@
+Category,Name,Description,Price
+ESPRESSO CLASSICS,Espresso,"Rich, concentrated coffee with crema",$3.25
+ESPRESSO CLASSICS,Americano,Espresso with hot water,$4.25
+ESPRESSO CLASSICS,Cappuccino,Espresso with steamed milk and foam,$5.25
+ESPRESSO CLASSICS,Latte,Espresso with steamed milk,$5.50
+ESPRESSO CLASSICS,Cortado,Equal parts espresso and steamed milk,$5.75
+ESPRESSO CLASSICS,Macchiato,Espresso 'marked' with steamed milk,$5.25
+SPECIALTY COFFEE,Mocha,"Espresso, steamed milk, and chocolate",$6.25
+SPECIALTY COFFEE,Caramel Latte,Latte with caramel syrup,$6.50
+SPECIALTY COFFEE,Vanilla Latte,Latte with vanilla syrup,$6.50
+SPECIALTY COFFEE,Cold Brew,"Smooth, slow-steeped coffee",$5.50
+SPECIALTY COFFEE,Nitro Cold Brew,Cold brew infused with nitrogen,$6.25
+SPECIALTY COFFEE,Maple Cinnamon Latte,Espresso with maple and warm spices,$6.75
+MATCHA CREATIONS,Classic Matcha Latte,Ceremonial grade matcha with steamed milk,$6.50
+MATCHA CREATIONS,Iced Matcha Latte,Refreshing cold matcha with milk,$6.75
+MATCHA CREATIONS,Vanilla Matcha Latte,Matcha with vanilla and steamed milk,$7.25
+MATCHA CREATIONS,Strawberry Matcha,Matcha with strawberry syrup,$7.50
+MATCHA CREATIONS,Lavender Matcha,Floral matcha with lavender notes,$7.75
+MATCHA CREATIONS,Matcha Americano,Pure matcha tea with hot water,$5.75
+TEA SELECTION,Earl Grey,Classic black tea with bergamot,$4.25
+TEA SELECTION,English Breakfast,Robust black tea blend,$4.25
+TEA SELECTION,Jasmine Green Tea,Fragrant green tea with jasmine,$4.50
+TEA SELECTION,Chamomile,Soothing herbal tea,$4.50
+TEA SELECTION,Peppermint,Refreshing herbal infusion,$4.50
+TEA SELECTION,Dragon Well Green,Premium Chinese green tea,$5.25
+TEA SELECTION,Darjeeling,Delicate black tea from India,$5.50
+TEA SELECTION,Oolong,Traditional semi-oxidized tea,$5.75
