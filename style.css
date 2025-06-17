@@ -927,17 +927,19 @@ body {
   flex: 1 1 100%;
   min-width: 0;
   text-align: center;
+  display: block;
 }
 
 .menu-subtitle {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    font-style: italic;
-    color: #666;
-    margin-top: 2px;
-    text-align: center;
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #666;
+  margin-top: 2px;
+  text-align: center;
+  /* Ensure it appears as a new line under .item-name */
 }
 
 @media (max-width: 768px) {
