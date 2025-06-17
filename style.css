@@ -939,7 +939,8 @@ body {
   color: #666;
   margin-top: 2px;
   text-align: center;
-  /* Ensure it appears as a new line under .item-name */
+  clear: both;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
