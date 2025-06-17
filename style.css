@@ -929,6 +929,16 @@ body {
   text-align: center;
 }
 
+.menu-subtitle {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.2;
+}
+
 @media (max-width: 768px) {
   .item-header {
     flex-direction: column;
