@@ -931,7 +931,7 @@ body {
 }
 
 .menu-subtitle {
-  display: block;
+  display: flex;
   font-family: 'Playfair Display', serif;
   font-size: 0.9rem;
   font-weight: 400;
