@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B&B Cafe — coffee, matcha, and tea. Beans by Kape Coffee, vibes by YNGY.">
+    <meta property="og:title" content="B&B Cafe">
+    <meta property="og:description" content="Coffee, matcha, and tea. Beans by Kape Coffee, vibes by YNGY.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
     <title>Bae Cafe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +16,7 @@
 </head>
 <body>
     <div class="menu-container">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         <!-- Header Section -->
         <header class="menu-header">
             <div class="header-decoration">
@@ -19,9 +25,11 @@
                 <div class="coffee-bean"></div>
             </div>
             <h1 class="cafe-name">B&B CAFE</h1>
-            <p class="tagline">coffee • matcha • tea</p>
-            <p class="tagline">Beans by Kape Coffee • Vibes by YNGY</p>
+            <p class="tagline">coffee • matcha</p>
             <div class="header-divider"></div>
+            <p class="footer-note" style="margin-top: 0.75rem; color: var(--menu-text-secondary); font-size: 0.98rem; text-align: center;">
+                <span title="Iced option available">❄️</span> indicates that an iced option is available.
+            </p>
         </header>
 
         <!-- Menu Grid -->
@@ -51,13 +59,24 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
+                            <h3 class="item-name">Flat White</h3>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
                             <h3 class="item-name">Latte <span title="Iced option available">❄️</span></h3>
                         </div>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
                             <h3 class="item-name">Mocha <span title="Iced option available">❄️</span></h3>
-                            <div class="menu-subtitle">(made with Ghirardelli)</div>
+                            <img class="ghirardelli-logo" src="pics/ghirardelli.png" alt="Ghirardelli Chocolate" />
+                        </div>
+                    </div>
+                    <div class="menu-item new-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Grace's Cookie Butter Latte <span title="Iced option available">❄️</span></h3>
+                            <div class="menu-subtitle">new!</div>
                         </div>
                     </div>
                 </div>
@@ -78,60 +97,36 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <h3 class="item-name">Sakura Matcha Latte 🌸</h3>
-                            <div class="menu-subtitle">(includes 🍓)</div>
+                            <h3 class="item-name">Sakura Matcha Latte <span title="Iced option available">❄️</span> 🌸</h3>
+                        </div>
+                    </div>
+                    <div class="menu-item new-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Josh's Coconut Matcha Cloud 🥥❄️</h3>
+                            <div class="menu-subtitle">new!</div>
                         </div>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <h3 class="item-name">Banana Cream Matcha Latte 🍌</h3>
-                            <div class="menu-subtitle">(includes 🥛 (duh))</div>
+                            <h3 class="item-name">Banana Cream Matcha Latte 🍌<span title="Iced option available">❄️</span></h3>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Tea Selection -->
-            <section class="menu-section" data-category="tea">
-                <div class="section-header">
-                    <div class="section-icon">🫖</div>
-                    <h2 class="section-title">TEA</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3 class="item-name">Lion Mountain Long Jing 浙江 獅峰龍井</h3>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3 class="item-name">Huang Shan Mao Feng 黃山毛峰</h3>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <h3 class="item-name">Early Grey</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
         <!-- Footer -->
         <footer class="menu-footer">
-            <p class="footer-note" style="margin-top:1rem; color: var(--menu-text-secondary); font-size: 0.98rem; text-align: center;">
-                <span title="Iced option available">❄️</span> indicates that an iced option is available.
-            </p>
-            <div class="footer-decoration">
+            <div class="footer-decoration" style="margin-top: 1rem;">
                 <div class="leaf-icon">🌳</div>
-                <p class="footer-text">Crafted with love for His glory• Served with lactose-tolerant people in mind</p>
+                <p class="footer-text">Crafted with love for His glory • Served with lactose-tolerant people in mind</p>
                 <div class="leaf-icon">🌳</div>
             </div>
         </footer>
         <!-- Author Biographies -->
         <section class="author-bios">
-            <h2 class="author-bios-title">About the Authors</h2>
+            <h2 class="author-bios-title">About the Artists</h2>
             <div class="author-bio-list">
                 <div class="author-bio">
                     <img class="author-photo" src="pics/author-josh.jpeg" alt="Photo of Josh Bae" width="96" height="96" />
@@ -145,6 +140,14 @@
                 </div>
             </div>
         </section>
+
+        <!-- Built by Claude badge -->
+        <div class="built-by">
+            <svg class="claude-logo" viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.3041 3.541h-3.6718l6.696 16.918H24Zm-10.6082 0L0 20.459h3.7442l1.3693-3.5527h7.0052l1.3693 3.5528h3.7442L10.5363 3.5409Zm-.3712 10.2232 2.2914-5.9456 2.2914 5.9456Z" fill="#D97757"/>
+            </svg>
+            <span>Built by Claude</span>
+        </div>
     </div>
 
     <script src="app.js"></script>
