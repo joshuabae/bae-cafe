@@ -176,6 +176,7 @@ function showEventBanner() {
         '<h3 class="event-banner-title">Traditional Chinese Tea Tasting</h3>' +
         '<p class="event-banner-detail">Today at 12 PM · Hosted by Bryan</p>' +
         '<p class="event-banner-sub">Join us in-house for a guided tasting of hand-selected Chinese teas. Experience the art of gongfu brewing and discover the stories behind each leaf.</p>' +
+        '<p class="event-banner-teas">Lion Mountain Long Jing · High Mountain Oolong Tea</p>' +
         '<button class="event-banner-close">Got it!</button>';
 
     document.body.appendChild(overlay);
